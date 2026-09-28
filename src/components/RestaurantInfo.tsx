@@ -99,12 +99,12 @@ export const RestaurantInfo: React.FC<RestaurantInfoProps> = ({
                 Horario de Cocina
               </h3>
               <p className="text-sm font-extrabold text-white">
-                18:00 a 23:30 hs
+                11:00 a 14:30 | 17:00 a 20:30 hs
               </p>
             </div>
           </div>
           <p className="text-xs text-zinc-400">
-            Abierto todos los días en horario nocturno para tus cenas y antojos.
+            Almuerzo (11:00 a 14:30 hs) y Cena / Tarde-Noche (17:00 a 20:30 hs).
           </p>
         </div>
 

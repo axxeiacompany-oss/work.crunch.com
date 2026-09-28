@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({
           </span>
           <span className="hidden sm:inline text-red-200">|</span>
           <span className="hidden sm:inline text-red-100 flex items-center gap-1">
-            <Clock className="w-3 h-3 text-amber-300" /> Abierto 18:00 a 23:30 hs
+            <Clock className="w-3 h-3 text-amber-300" /> 11:00 a 14:30 | 17:00 a 20:30 hs
           </span>
         </div>
 

@@ -26,6 +26,9 @@ INFORMACIÓN DEL NEGOCIO:
 - Nombre: Wok Crunch Oriental
 - Ubicación: Ciudad del Este (CDE), Alto Paraná, Paraguay.
 - Cobertura: Delivery en Ciudad del Este y retiro en el local.
+- Horarios de atención (ambos turnos):
+  • Almuerzo: 11:00 a 14:30 hs (11:00 AM a 2:30 PM)
+  • Tarde / Noche: 17:00 a 20:30 hs (5:00 PM a 8:30 PM)
 - Delivery: WhatsApp 0991607393 (Paraguay, prefijo internacional: +595991607393)
 
 MENÚ EXACTO Y PRECIOS (en Guaraníes, símbolo ₲):
@@ -166,6 +169,28 @@ export function generateFallbackResponse(userMessage: string, previousOrder?: an
         '📍 ¡Estamos ubicados en Ciudad del Este (CDE), Paraguay! 🇵🇾 Hacemos delivery en toda la zona de Ciudad del Este y alrededores, además de retiro en el local. Nuestro WhatsApp es 0991607393. ¿Qué te gustaría ordenar hoy?',
       order: previousOrder || { items: [], total: 0, deliveryAddress: null, paymentMethod: null, isConfirmed: false },
       quickReplies: ['📜 Ver menú', '🍗 Pollo frito', '🍜 Yakisoba', '🍚 Arroz frito'],
+    };
+  }
+
+  // Check hours / schedule request
+  if (
+    lower.includes('horario') ||
+    lower.includes('horarios') ||
+    lower.includes('hora') ||
+    lower.includes('abierto') ||
+    lower.includes('abren') ||
+    lower.includes('cierran') ||
+    lower.includes('cerrado') ||
+    lower.includes('funcionamento') ||
+    lower.includes('funcionamiento') ||
+    lower.includes('que horas') ||
+    lower.includes('a que hora')
+  ) {
+    return {
+      reply:
+        '⏰ **Horarios de atención de Wok Crunch Oriental:**\n\n☀️ **Almuerzo:** 11:00 a 14:30 hs (11:00 a 2:30)\n🌙 **Tarde / Noche:** 17:00 a 20:30 hs (5:00 a 8:30)\n\n📍 Atendemos en Ciudad del Este (CDE) con delivery y retiro en el local. ¿Deseas hacer tu pedido ahora?',
+      order: previousOrder || { items: [], total: 0, deliveryAddress: null, paymentMethod: null, isConfirmed: false },
+      quickReplies: ['📜 Ver menú', '🛵 Pedir por WhatsApp', '🍜 Yakisoba', '🍚 Arroz frito'],
     };
   }
 

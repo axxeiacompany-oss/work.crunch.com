@@ -84,7 +84,7 @@ export const MenuCatalog: React.FC<MenuCatalogProps> = ({
                 <span>Delivery WhatsApp: {RESTAURANT_INFO.whatsappPhone}</span>
               </a>
               <div className="text-xs text-amber-400 font-medium">
-                🕒 18:00 a 23:30 hs
+                🕒 11:00 a 14:30 | 17:00 a 20:30 hs
               </div>
             </div>
           </div>

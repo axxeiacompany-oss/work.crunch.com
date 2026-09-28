@@ -20,7 +20,10 @@ export const RESTAURANT_INFO = {
   whatsappUrl: "https://wa.me/595991607393",
   city: "Ciudad del Este (CDE)",
   location: "Ciudad del Este (CDE), Alto Paraná, Paraguay",
-  hours: "Abierto todos los días de 18:00 a 23:30 hs",
+  hours: "11:00 a 14:30 hs y 17:00 a 20:30 hs",
+  hoursLunch: "11:00 a 14:30 hs",
+  hoursDinner: "17:00 a 20:30 hs",
+  hoursSummary: "11:00 a 14:30 | 17:00 a 20:30 hs",
   deliveryNote: "Delivery en Ciudad del Este (CDE) o retiro en el local",
 };
 
